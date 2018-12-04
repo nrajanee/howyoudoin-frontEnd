@@ -1,0 +1,322 @@
+body {
+  background-color: rgb(200, 191, 231);
+  font: 400 1.25em/1.38 Helvetica;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  float: left;
+}
+
+.containerlogo {
+  float: left;
+  width: 44.4987775061%;
+  height: 139px;
+  margin: 40px 0 0 28.12118%;
+  background-image: url('../images/Logo.JPG');
+  background-repeat: no-repeat;
+  background-size: 175px 159.5px;
+  background-position: center center;
+}
+
+.containermain {
+  float: left;
+  width: 34.0833333333%;
+  height: 492px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.email {
+  display: block;
+  float: left;
+  clear: both;
+  width: 75.1069682151%;
+  height: 41px;
+  margin: 59px 0 0 12.77124%;
+  padding: 0 10px;
+  background-color: rgb(242, 242, 242);
+  font-size: 0.65em;
+  color: rgb(0, 0, 0);
+}
+
+.password {
+  display: block;
+  float: left;
+  clear: both;
+  width: 75.1069682151%;
+  height: 41px;
+  padding: 0 10px;
+  background-color: rgb(242, 242, 242);
+  font-size: 0.65em;
+  color: rgb(0, 0, 0);
+}
+
+.register {
+  float: left;
+  clear: both;
+  width: 44.4987775061%;
+  min-height: 26px;
+  font-size: 0.6em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.text {
+  float: left;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.username {
+  display: block;
+  float: left;
+  clear: both;
+  width: 75.1069682151%;
+  height: 41px;
+  margin-left: 12.77124%;
+  padding: 0 10px;
+  background-color: rgb(242, 242, 242);
+  font-size: 0.65em;
+  color: rgb(0, 0, 0);
+}
+
+._button {
+  display: block;
+  float: left;
+  border-radius: 3px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+._element {
+  width: 28.6653645833%;
+  height: 282px;
+  margin: 40px 0 0 3.33171%;
+  background-image: url('../images/tenor(2).gif');
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center center;
+}
+
+.container ._button {
+  position: relative;
+  width: 19.0625%;
+  height: 48px;
+  background-color: rgb(222, 222, 222);
+  color: rgb(0, 0, 0);
+}
+
+.containermain ._button {
+  clear: both;
+  width: 44.594284841%;
+  height: 33px;
+  background-color: rgb(200, 191, 231);
+  color: rgb(255, 255, 255);
+}
+
+.container-1 {
+  width: 80%;
+  height: 352px;
+  margin: 64px 0 0 9.99349%;
+}
+
+.container-3 {
+  clear: both;
+  width: 80.0833333333%;
+  height: 298px;
+  margin: 17px 0 0 10%;
+  background-color: rgb(255, 255, 255);
+}
+
+.containermain-1 {
+  margin: 129px 0 0 32.95703%;
+}
+
+.containermain-2 {
+  margin: 174px 0 0 32.83203%;
+}
+
+.password-1 {
+  margin: 15px 0 0 12.4427%;
+}
+
+.password-2 {
+  margin: 18px 0 0 12.77124%;
+}
+
+.register-1 {
+  margin: 21px 0 0 27.70095%;
+}
+
+.register-2 {
+  margin: 39px 0 0 28.07152%;
+}
+
+.text-1 {
+  width: 42.4557752341%;
+  min-height: 52px;
+  margin: 13px 0 0 31.9654%;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.text-2 {
+  position: relative;
+  clear: both;
+  z-index: 11;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 14.98277%;
+  font-size: 1em;
+}
+
+.text-3 {
+  position: relative;
+  z-index: 15;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 18.98088%;
+  font-size: 1em;
+}
+
+.text-4 {
+  position: relative;
+  clear: both;
+  z-index: 12;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 14.98277%;
+  font-size: 1em;
+}
+
+.text-5 {
+  position: relative;
+  z-index: 16;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 18.98088%;
+  font-size: 1em;
+}
+
+.text-6 {
+  position: relative;
+  clear: both;
+  z-index: 13;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 14.98277%;
+  font-size: 1em;
+}
+
+.text-7 {
+  position: relative;
+  z-index: 17;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 18.98088%;
+  font-size: 1em;
+}
+
+.text-8 {
+  position: relative;
+  clear: both;
+  z-index: 14;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 14.98277%;
+  font-size: 1em;
+}
+
+.text-9 {
+  position: relative;
+  z-index: 18;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 18.98088%;
+  font-size: 1em;
+}
+
+.username-1 {
+  margin-top: 18px;
+}
+
+.username-2 {
+  margin-top: 59px;
+}
+
+.container ._button-1 {
+  z-index: 1;
+  margin: 68px 0 0 5.08952%;
+}
+
+.container ._button-2 {
+  z-index: 2;
+  margin: 68px 0 0 1.35417%;
+}
+
+.container ._button-3 {
+  z-index: 3;
+  margin: 68px 0 0 0.78288%;
+}
+
+.container ._button-4 {
+  clear: both;
+  z-index: 4;
+  margin: -188px 0 0 37.08659%;
+}
+
+.container ._button-5 {
+  z-index: 5;
+  margin: -188px 0 0 57.50814%;
+}
+
+.container ._button-6 {
+  z-index: 6;
+  margin: -188px 0 0 77.35026%;
+}
+
+.container ._button-7 {
+  z-index: 7;
+  margin: -127px 0 0 46.94499%;
+}
+
+.container ._button-8 {
+  z-index: 8;
+  margin: -127px 0 0 67.00684%;
+}
+
+.containermain ._button-10 {
+  margin: 29px 0 0 28.07152%;
+}
+
+.containermain ._button-9 {
+  margin: 14px 0 0 27.70095%;
+}
+
+.register a {
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-color: transparent;
+  border-style: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  font-family: inherit;
+  font-style: normal;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  color: #000000;
+  opacity: 1;
+  word-break: normal;
+  word-wrap: normal;
+  white-space: normal;
+}

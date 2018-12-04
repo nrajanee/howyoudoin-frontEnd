@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src = "../scripts/loginHandler.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/standardize.css">
+    <link rel="stylesheet" href="css/index-grid.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="body page-index clearfix">
+<div class="containermain containermain-2 clearfix">
+    <div class="containerlogo"></div>
+    <input id = "username" class="username username-2" name="Username" type="text" placeholder="Username">
+    <input id = "password" class="password password-2" name="Password" type="password" placeholder="Password">
+
+    <button class="_button _button-2" onclick = login(document.getElementById("username").value,document.getElementById("password").value)>Login</button>
+    <p class="register register-2"><a href = "\SignUp.html">Not a Member? Register</a></p>
+</div>
+</body>
+</html>
