@@ -1,3 +1,4 @@
+
 function login(user,password){
     //var url= 'https://howyoudoin/login?userName='+user+'&password='+password;
     if(user.length == 0){
@@ -7,7 +8,12 @@ function login(user,password){
         alert("Please Enter you Password");
     }
 
-    axios.get('https://howyoudoin/login?userName='+user+'&password='+password)
+    axios.get('/login', {
+        params: {
+            userName : user,
+            userPassword : password
+        }
+    })
         .then(function (response) {
             console.log(response);
         })
@@ -29,7 +35,13 @@ function register(email,user,password){
         alert("Please Enter you Password");
     }
 
-    axios.get('https://howyoudoin/login?userName='+user+'&password='+password)
+    axios.get('/register', {
+        params: {
+            userName : user,
+            userPassword : password,
+            emailId : email
+        }
+    })
         .then(function (response) {
             console.log(response);
         })
@@ -39,14 +51,6 @@ function register(email,user,password){
         });
 }
 
-
 function processEmotion(emotion){
-    axios.get('https://howyoudoin/login?userName='+user+'&password='+password)
-        .then(function (response) {
-            console.log(response);
-        })
-        .catch(function (error) {
-            console.log(error);
-            alert("Error! Please check your Username or Password.");
-        });
+
 }
