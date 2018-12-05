@@ -38,3 +38,15 @@ function register(email,user,password){
             alert("Error! Please check your Username or Password.");
         });
 }
+
+
+function processEmotion(emotion){
+    axios.get('https://howyoudoin/login?userName='+user+'&password='+password)
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+            alert("Error! Please check your Username or Password.");
+        });
+}
