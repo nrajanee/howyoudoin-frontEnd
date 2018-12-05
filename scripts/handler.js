@@ -52,5 +52,5 @@ function register(email,user,password){
 }
 
 function processEmotion(emotion){
-
+    alert("Here");
 }
