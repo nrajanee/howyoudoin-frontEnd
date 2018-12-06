@@ -36,7 +36,7 @@ function register(email,user,password){
         alert("Please Enter you Password");
     }
 
-    axios.get('/register', {
+    axios.get('https://desolate-waters-36626.herokuapp.com/register', {
         params: {
             userName : user,
             userPassword : password,
@@ -44,11 +44,12 @@ function register(email,user,password){
         }
     })
         .then(function (response) {
+            window.location.replace('../index.html');
             console.log(response);
         })
         .catch(function (error) {
             console.log(error);
-            alert("Error! Please check your Username or Password.");
+            alert("Error! Please check if already registered or try new username");
         });
 }
 
