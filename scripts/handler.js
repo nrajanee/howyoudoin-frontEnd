@@ -1,4 +1,3 @@
-
 function login(user,password){
     //var url= 'https://howyoudoin/login?userName='+user+'&password='+password;
     if(user.length == 0){
@@ -7,6 +6,12 @@ function login(user,password){
     else if(password.length == 0){
         alert("Please Enter you Password");
     }
+
+    let now = new Date();
+    let time = now.getTime();
+    let expireTime = time + 1000*3600;
+    now.setTime(expireTime);
+    document.cookie = "Username="+ user+";expires="+now.toGMTString()+";path=/;"
 
     axios.get('https://desolate-waters-36626.herokuapp.com/login', {
         params: {
@@ -22,6 +27,7 @@ function login(user,password){
             console.log(error);
             alert("Error! Please check your Username or Password.");
         });
+
 }
 
 function register(email,user,password){
@@ -53,19 +59,110 @@ function register(email,user,password){
         });
 }
 
+function Track(){
+    //console.log(document.getElementById("usernameDashboard").value);
+    //console.log(username);
+
+    console.log(document.cookie);
+    let cookie = document.cookie;
+    let cook = cookie.split("Username=");
+    console.log(cook);
+    let co;
+    if(cook[1].indexOf(";")> -1){
+        co = cook[1].split(";");
+        //console.log(cook[1]);
+        console.log("here");
+        cook[1] = co[0];
+    }
+    console.log(co);
+    let name = document.getElementById("usernameDashboard").innerText;
+    console.log(name);
+    let nameNew = name.replace("USERNAME",cook[1]);
+    console.log(nameNew);
+    document.getElementById("usernameDashboard").innerText = nameNew;
+
+    axios.get("https://desolate-waters-36626.herokuapp.com/moodTracker",{
+        params: {
+            userName : cook[1]
+        }
+    })
+        .then(function (response) {
+            //console.log(response.data.data);
+            let emotionData = response.data.data;
+
+            let H = document.getElementById("Happiness").innerText;
+            H = H.replace("#", emotionData.happiness);
+            document.getElementById("Happiness").innerText = H;
+
+            let sur = document.getElementById("Surprise").innerText;
+            sur = sur.replace("#", emotionData.surprise);
+            document.getElementById("Surprise").innerText = sur;
+
+            let sad = document.getElementById("Sadness").innerText;
+            sad = sad.replace("#", emotionData.sadness);
+            document.getElementById("Sadness").innerText = sad;
+
+            let F = document.getElementById("Fear").innerText;
+            F = F.replace("#", emotionData.fear);
+            document.getElementById("Fear").innerText = F;
+
+            let A = document.getElementById("Anger").innerText;
+            A = A.replace("#", emotionData.anger);
+            document.getElementById("Anger").innerText = A;
+
+            let D = document.getElementById("Disgust").innerText;
+            D = D.replace("#", emotionData.disgust);
+            document.getElementById("Disgust").innerText = D;
+
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+
+
+}
+
 function processEmotion(emotion){
+    console.log(document.cookie);
+    let cookie = document.cookie;
+    let cook = cookie.split("Username=");
+    console.log(cook);
+    let co;
+    if(cook[1].indexOf(";")> -1){
+        co = cook[1].split(";");
+        //console.log(cook[1]);
+        console.log("here");
+        cook[1] = co[0];
+    }
+
    let now = new Date();
    let time = now.getTime();
    let expireTime = time + 1000*60;
    now.setTime(expireTime);
    document.cookie = "Emotion="+ emotion+";expires="+now.toGMTString()+";path=/;";
-   window.location.replace("./emotions.html")
+
+    axios({
+            method: 'post',
+            url: "https://desolate-waters-36626.herokuapp.com/iFeel",
+            params:{
+                userName: cook[1],
+                emotion: emotion
+            }
+    })
+        .then(function (response) {
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    window.location.replace("./emotions.html");
 }
 
 function Loademotion(){
     console.log(document.cookie);
     let emo = document.cookie;
-    let e = emo.split("=");
+    let e = emo.split("; Emotion=");
     document.getElementById("emotionTitle").innerText = e[1];
     let divYoutube1 = document.createElement('IFRAME');
     let divYoutube2 = document.createElement('IFRAME');

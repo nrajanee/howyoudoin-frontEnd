@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="../css/dashboard-grid.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="body page-dashboard clearfix">
+<body class="body page-dashboard clearfix" onload="Track()">
 <div class="container container-1 clearfix">
     <div class="container _element"></div>
-    <button class="_button _button-1" onclick= processEmotion("Happiness")>Happiness</button>
+    <button class="_button _button-1" onclick=processEmotion("Happiness")>Happiness</button>
     <button class="_button _button-2" onclick=processEmotion("Surprise")>Surprise</button>
     <button class="_button _button-3" onclick=processEmotion("Sadness")>Sadness</button>
     <button class="_button _button-4" onclick=processEmotion("Fear")>Fear</button>
@@ -21,7 +21,7 @@
     <button class="_button _button-6" onclick=processEmotion("Disgust")>Disgust</button>
 </div>
 <div class="container container-3 clearfix">
-    <p id ="usernameDashboard" class="text text-1">USERNAME'S MOOD LOG</p>
+    <p id ="usernameDashboard" class="text text-1">USERNAME's Mood <Log></Log></p>
     <p id= "Happiness" class="text text-2">Happiness:#</p>
     <p id= "Fear" class="text text-3">Fear:#</p>
     <p id= "Anger" class="text text-4">Anger:#</p>
