@@ -8,7 +8,7 @@ function login(user,password){
         alert("Please Enter you Password");
     }
 
-    axios.get('/login', {
+    axios.get('https://desolate-waters-36626.herokuapp.com/login', {
         params: {
             userName : user,
             userPassword : password
@@ -16,6 +16,7 @@ function login(user,password){
     })
         .then(function (response) {
             console.log(response);
+            window.location.replace('./html/Dashboard.html');
         })
         .catch(function (error) {
             console.log(error);
