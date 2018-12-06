@@ -143,12 +143,34 @@ function processEmotion(emotion){
    document.cookie = "Emotion="+ emotion+";expires="+now.toGMTString()+";path=/;";
 
     axios({
-            method: 'post',
-            url: "https://desolate-waters-36626.herokuapp.com/iFeel",
+            method: 'get',
+            url: "https://desolate-waters-36626.herokuapp.com/iFeel1",
             params:{
                 userName: cook[1],
                 emotion: emotion
             }
+    })
+        .then(function (response) {
+            console.log(response);
+            incrementCount(cook[1],response.data.data, emotion)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    //window.location.replace("./emotions.html");
+}
+
+
+function incrementCount(user, count, emotion){
+
+    axios({
+        method:'post',
+        url:"https://desolate-waters-36626.herokuapp.com/iFeel2",
+        params:{
+            userName:user,
+            emotion:emotion,
+            count:count
+        }
     })
         .then(function (response) {
             console.log(response);
@@ -158,6 +180,7 @@ function processEmotion(emotion){
         });
     window.location.replace("./emotions.html");
 }
+
 
 function Loademotion(){
     console.log(document.cookie);
