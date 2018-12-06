@@ -21,7 +21,7 @@ function login(user,password){
     })
         .then(function (response) {
             console.log(response);
-            window.location.replace('./html/Dashboard.html');
+            window.location.href ='./html/Dashboard.html';
         })
         .catch(function (error) {
             console.log(error);
@@ -50,7 +50,7 @@ function register(email,user,password){
         }
     })
         .then(function (response) {
-            window.location.replace('../index.html');
+            window.location.href = '../index.html';
             console.log(response);
         })
         .catch(function (error) {
@@ -178,7 +178,7 @@ function incrementCount(user, count, emotion){
         .catch(function (error) {
             console.log(error);
         });
-    window.location.replace("./emotions.html");
+    window.location.href = "./emotions.html";
 }
 
 
