@@ -107,6 +107,14 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.container ._container {
+  width: 114.9442490458%;
+  height: 1601px;
+  margin: -26px 0 0 -7.47006%;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
 .containermain ._button {
   clear: both;
   width: 44.594284841%;
@@ -127,6 +135,12 @@ body {
   height: 298px;
   margin: 17px 0 0 10%;
   background-color: rgb(255, 255, 255);
+}
+
+.container-4 {
+  width: 69.5833333333%;
+  height: 86px;
+  margin: 50px 0 0 15.16667%;
 }
 
 .containermain-1 {
@@ -159,6 +173,15 @@ body {
   margin: 13px 0 0 31.9654%;
   font-size: 1.2em;
   font-weight: 700;
+}
+
+.text-10 {
+  position: relative;
+  z-index: 18;
+  width: 25.4731399583%;
+  min-height: 39px;
+  margin-left: 18.98088%;
+  font-size: 1em;
 }
 
 .text-2 {
@@ -229,12 +252,11 @@ body {
 }
 
 .text-9 {
-  position: relative;
-  z-index: 18;
-  width: 25.4731399583%;
-  min-height: 39px;
-  margin-left: 18.98088%;
-  font-size: 1em;
+  width: 87.0185263569%;
+  min-height: 75px;
+  margin: 32px 0 0 6.53958%;
+  background-color: rgb(200, 191, 231);
+  font-size: 2.25em;
 }
 
 .username-1 {
@@ -320,3 +342,20 @@ body {
   word-wrap: normal;
   white-space: normal;
 }
+
+.iframe {
+  float:left;
+  clear: both;
+  width: 70.0159541562%;
+  height: 453px;
+  margin-left: 15.04249%;
+}
+
+.iframe-1 {
+  margin-top: 120px;
+}
+
+.iframe-2 {
+  margin-top: 89px;
+}
+
